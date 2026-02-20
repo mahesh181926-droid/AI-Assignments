@@ -66,7 +66,8 @@ response = GeminiChatCompletion.create(
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": "Hello, who won the world cup in 2022?"}
     ],
-    api_key="AIzaSyABwoDPRHAo0he5CazlsZ_WasGLrj7-p3c"
+    api_key="YOUR_GOOGLE_GEMINI_KEY"
 )
+
 
 print(response['choices'][0]['messages']['content'])
