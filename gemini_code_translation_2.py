@@ -2,7 +2,7 @@ from google import genai
 
 # 1. Initialize the Gemini Client
 # Set your key: export GOOGLE_API_KEY='your_key_here'
-client = genai.Client(api_key="AIzaSyABwoDPRHAo0he5CazlsZ_WasGLrj7-p3c")
+client = genai.Client(api_key="YOUR_GOOGLE_API_KEY")
 
 #Read the python file
 with open("gemini_open_ai_compat.py", "r") as file:
@@ -17,4 +17,5 @@ response = client.models.generate_content(
 )
 
 # 4. Print the result
+
 print(response.text)
